@@ -12,6 +12,7 @@ public class UsuarioDAO implements IUsuarioDAO {
 	@Override
 	public List<Usuario> getAll() {
 		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
