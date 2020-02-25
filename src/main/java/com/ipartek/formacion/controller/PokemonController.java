@@ -26,9 +26,9 @@ public class PokemonController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static PokemonDAO dao;
 
-	private String pathInfo;
-	private PrintWriter out;
-	private String jsonResponseBody;
+	private static String pathInfo;
+	private static PrintWriter out;
+	private static String jsonResponseBody;
 
 	/**
 	 * @see Servlet#init(ServletConfig)
