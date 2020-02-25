@@ -27,8 +27,8 @@ public class PokemonController extends HttpServlet {
 	private static PokemonDAO dao;
 
 	private static String pathInfo;
-	private static PrintWriter out;
-	private static String jsonResponseBody;
+	//private static PrintWriter out;
+	//private static String jsonResponseBody;
 
 	/**
 	 * @see Servlet#init(ServletConfig)
@@ -72,7 +72,7 @@ public class PokemonController extends HttpServlet {
 			throws ServletException, IOException {
 
 		String pNombre = request.getParameter("nombre");
-		String pathInfo = request.getPathInfo();
+		pathInfo = request.getPathInfo();
 		int id = 0;
 		if (pNombre == null) {
 			try {
